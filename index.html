@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>HotDoc Recalls</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://d3sjaxzllw9rho.cloudfront.net/assets/recalls/pages-5119dd7b2e3f6f8075454be81217f0f515cfc34efd7a20b4b7722f8e95813f5c.css" media="screen">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="u9HAQaXizG7PBsYE_Vwr4TA_wExZIK-IUQ-2n-Os8i1E5qxfpai7hiE1KVeN6FZK5etIfG4bl_55-kDKKTUEYA">
+  </head>
+  <body id="recalls">
+    <div>
+      <div>
+        <header>
+          <div class="clinic-logo">
+          </div>
+
+      <h2>Alex's BP Demo Clinic</h2>
+      <p>03 5550 1234</p>
+        </header>
+        <section id="step-1">
+  <p>Please verify your identity to read your health message.</p>
+  <p>Please fill out all fields.</p>
+  <form action="/recalls/CUlCb7XSps5faOYF0QK7_A" accept-charset="UTF-8" method="post">
+      <div class="field">
+  <label>Your Last Name</label>
+  <input id="last_name" tabindex="1" type="text" autocomplete="off" autocorrect="off" name="last_name" placeholder="Last Name">
+</div>
+
+<div class="field">
+  <label> Your Date of Birth</label>
+  <div class="dob">
+    <div class="cell">
+      <input id="dob_day" name="date_of_birth[day]" tabindex="2" class="auto-advance" type="number" min="1" max="31" inputmode="numeric" pattern="[0-9]*" placeholder="DD" autocomplete="off" autocorrect="off">
+    </div>
+    <div class="cell">
+      <input id="dob_month" name="date_of_birth[month]" tabindex="3" class="auto-advance" type="number" min="1" max="12" inputmode="numeric" pattern="[0-9]*" placeholder="MM" autocomplete="off" autocorrect="off">
+    </div>
+    <div class="cell">
+      <input id="dob_year" name="date_of_birth[year]" tabindex="4" type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="YYYY" autocomplete="off" autocorrect="off">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // Focus next field when the user hits the 'Go' button on iOS keyboard.
+  var nameInput = document.getElementById("last_name");
+  nameInput.addEventListener("keypress", function(e) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+      document.getElementById("dob_day").focus();
+      e.preventDefault();
+    }
+  });
+
+  // Advance DOB fields automatically after two digits
+  var autoAdvanceInputs = document.getElementsByClassName("auto-advance");
+  for (var i = 0; i < autoAdvanceInputs.length; i++) {
+    var input = autoAdvanceInputs[i];
+    input.addEventListener("input", function(e) {
+      if (event.target.value.length == 2) {
+        var tabIndex = event.target.tabIndex;
+        document.getElementsByTagName('input')[tabIndex].focus();
+      }
+    });
+  }
+</script>
+
+
+    <button type="submit" class="button">Verify</button>
+</form></section>
+
+        <footer>
+          <dl class="expandables">
+            <dt><h3>About this recall service</h3></dt>
+            <dd>
+              <div>
+                <p>At Alex's BP Demo Clinic we use a secure electronic 'recall &amp; reminder service' so we may notify you of upcoming due appointments and procedures. This system also allows you to easily book your appointment by phone or online where applicable.</p>
+              </div>
+            </dd>
+              <dt><h3>Unable to verify?</h3></dt>
+              <dd>
+                <div>
+                  <p>This could mean your patient record at Alex's BP Demo Clinic doesn't match what you have entered. Please ensure you are typing your last name and date of birth as supplied at the time of registration. Alternatively contact us on 03 5550 1234 to book your appointment directly.</p>
+                </div>
+              </dd>
+              <dt><h3>Do you wish to opt-out?</h3></dt>
+              <dd>
+                <div>
+                  <p>If you no longer wish to receive recall SMSs from Alex's BP Demo Clinic, please click <a href="/recalls/CUlCb7XSps5faOYF0QK7_A/opt_out">this link</a>.</p>
+                </div>
+              </dd>
+          </dl>
+        </footer>
+      </div>
+    </div>
+  
+
+</body></html>
